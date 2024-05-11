@@ -20,15 +20,15 @@ const BooksCard = ({
         <h3 className="font-semibold text-[#151515] mb-2">{name}</h3>
         <p className="text-[#333333] text-sm ">
           Cover:{" "}
-          <Link className="text-blue-400" to="http://url.to.book.cover">
-            {cover}
+          <Link className="text-blue-400" to={cover}>
+            {cover.slice(0, 40)}...
           </Link>{" "}
         </p>
         <p className="text-[#333333] text-sm ">
           Pages: <span>{pages}</span>
         </p>
         <p className="text-[#333333] text-sm ">
-          Published: <span>{published}</span>
+          Published: <span className="">{published}</span>
         </p>
         <p className="text-[#333333] text-sm ">
           Isbn: <span>{isbn}</span>
