@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.login {
+  background-image: url("/clippath.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.books {
+  /* background-image: url("/clippath.png");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  background-color: #333333;
+}
+html {
+  background-color: #333333;
+}
+.book-card {
+  transition: all 0.3s ease;
+}
+
+.book-card:hover .actions {
+  opacity: 1;
+  right: -40px; /* Chapga harakatlanish */
+}
+
+.actions {
+  position: absolute;
+  top: 5px;
+  right: -50px; /* Aniq joylashuvi */
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .book-title {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
+@media screen and (max-width: 459px) {
+  .book-title h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.MuiPaginationItem-circular {
+  color: white !important;
+}
